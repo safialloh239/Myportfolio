@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолиои ман</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            background: linear-gradient(90deg, #e1306c, #f77737);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #b0b0c0;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-left: 4px solid #e1306c;
+            padding-left: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: #e1306c;
+        }
+
+        .project-card h3 {
+            color: #f77737;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .project-card p {
+            color: #b0b0c0;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            background: linear-gradient(90deg, #e1306c, #f77737);
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card a:hover {
+            opacity: 0.8;
+        }
+
+        .contact-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-section p {
+            margin-bottom: 15px;
+            color: #b0b0c0;
+        }
+
+        .instagram-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+        }
+
+        .instagram-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>[Hodizoda]</h1>
+            <p>Веб-разработчик | Сайтҳо ва барномаҳо месозам</p>
+        </header>
+
+        <section>
+            <h2>Лоиҳаҳои ман</h2>
+            <div class="projects">
+                
+                <div class="project-card">
+                    <h3>Лоиҳаи 1: Сайти мағоза</h3>
+                    <p>Сайти замонавӣ барои фурӯши мол бо интерфейси қулай. Технологияҳо: HTML, CSS, JavaScript.</p>
+                    <a href="#">Дидани лоиҳа</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Лоиҳаи 2: Барномаи мобилӣ</h3>
+                    <p>Барнома барои Android барои ҳисоб кардани хароҷоти ҳармоҳа барои сохибкорон ва хисоботи рузона барои хамаи одамон. Технологияҳо: Flutter, Dart.</p>
+                    <a href="#">Дидани лоиҳа</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Лоиҳаи 3: Дизайни UI/UX</h3>
+                    <p>Тарҳрезии интерфейси барномаи мобилӣ барои соҳахои гуногун. Восита: Figma.</p>
+                    <a href="#">Дидани лоиҳа</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Тамос бо ман</h2>
+            <p>Барои ҳамкорӣ ва фармоиш ба ман дар Instagram нависед:</p>
+            <a href="https://instagram.com/l_hodizoda" class="instagram-btn" target="_blank">Instagram-и ман</a>
+        </section>
+
+        <footer>
+            &copy; 2024 [Hodizoda]. Ҳамаи ҳуқуқҳо ҳифз шудаанд.
+        </footer>
+    </div>
+
+</body>
+</html>
